@@ -2,17 +2,28 @@ public class Wilder {
 
 	private String firstname;
 	private boolean present;
-	
+	private int counter = 0;
+//	
+//	public int getCounter() {
+//		return counter;
+//	}
+//	
+//	public void incCounter() {
+//		counter++;
+//	}
+//	
 	public Wilder(String firstname) {
 		this.firstname = firstname;
+//		incCounter();
 	}
 	
 	public Wilder(String firstname, boolean present) {
 		this.firstname = firstname;
 		this.present = present;
+//		incCounter();
 	}
 	
-	public void showIfPresent() {
+	public void whoAmI() {
 		System.out.print("My name is " + firstname + " and I am ");
 		if (!present) {
 			System.out.print("not ");
