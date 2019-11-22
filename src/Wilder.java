@@ -17,7 +17,7 @@ public class Wilder {
 	
 	public String whoAmI() {
 		String out = "My name is " + firstname + " and I am ";
-		if (!present) {
+		if (!this.present) {
 			out += "not ";
 		}
 		out += "present";
@@ -37,7 +37,7 @@ public class Wilder {
 	}
 
 	public String getName() {
-		return firstname;
+		return this.firstname;
 	}
 	
 }
